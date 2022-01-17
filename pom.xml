@@ -29,6 +29,33 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit-dep</artifactId>
+        <version>4.10</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>1.2.1</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-library</artifactId>
+        <version>1.2.1</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>1.8.5</version>
+        <scope>test</scope>
+      </dependency>
 	</dependencies>
 
 	<build>
@@ -165,7 +192,10 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  
-	</build>
+  </build>
+	
+  <prerequisites>
+    <maven>3.0.3</maven>
+  </prerequisites>
 
 </project>
