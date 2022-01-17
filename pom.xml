@@ -59,12 +59,17 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
+	<plugins>
+	<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-pmd-plugin</artifactId>
+          <version>3.15.0</version>
+        </plugin>
+	  <plugin>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-maven-plugin</artifactId>
+	 </plugin>
+	<plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <source>1.8</source>
@@ -118,6 +123,11 @@
 </plugins>
  <pluginManagement>
       <plugins>
+	<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-pmd-plugin</artifactId>
+          <version>3.15.0</version>
+        </plugin>
         <plugin>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>2.8</version>
@@ -197,5 +207,13 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+	<reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.15.0</version>
+      </plugin>
+	    </reporting>
 
 </project>
